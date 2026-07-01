@@ -1,0 +1,8 @@
+# Maps dataset class names → semantic roles used by the geofencing/compliance layer.
+# Matches keremberke/hard-hat-detection (Hard Hat Workers, Roboflow export, 2 classes).
+#   hardhat     = helmet worn  → compliant
+#   no-hardhat  = bare head    → PPE violation
+# Code reads roles from here; it never hardcodes class names. Extend when swapping datasets.
+roles:
+  hardhat: ppe_ok
+  no-hardhat: ppe_violation

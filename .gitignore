@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+
+# Secrets
+.env.local
+.env
+
+# Data & model artifacts (too big / reproducible)
+data/
+runs/
+reports/
+*.pt
+!yolo11s.pt.placeholder
+
+# OS
+.DS_Store
+Thumbs.db

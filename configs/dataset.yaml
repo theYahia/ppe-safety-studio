@@ -1,0 +1,18 @@
+# Dataset acquisition config. Two ways to provide data:
+#
+# 1) local_path — fastest, fully reproducible. Point at an extracted YOLO dataset
+#    (a folder containing data.yaml, or the data.yaml itself). Leave the roboflow
+#    block as-is; it is only used when local_path is missing/empty.
+#
+# 2) roboflow — auto-download from Roboflow Universe (needs ROBOFLOW_API_KEY in .env.local).
+#    The Hard Hat Workers dataset is CC0 (public domain), 7,035 images / 27,039 annotations.
+#    ⚠ Confirm the current version number at the Universe page before relying on it.
+
+local_path: "data/hardhat"   # produced by `python -m ppe_studio.data_nokey --out data/hardhat`
+download_dir: "data/ppe"
+
+roboflow:
+  workspace: "joseph-nelson"
+  project: "hard-hat-workers"
+  version: 2             # confirm at universe.roboflow.com/joseph-nelson/hard-hat-workers
+  format: "yolov8"       # standard Ultralytics layout; trains fine with yolo11/yolo12

@@ -1,0 +1,12 @@
+# Runtime deps. On a local GPU box install a CUDA torch build FIRST, e.g.:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+# then: pip install -r requirements.txt
+# (Hugging Face Spaces free tier resolves a CPU torch automatically — that's fine for demo.)
+ultralytics>=8.3.0
+streamlit>=1.40
+pillow>=10.0
+numpy>=1.26
+pyyaml>=6.0
+opencv-python-headless>=4.9
+lapx>=0.5            # ByteTrack association
+roboflow>=1.1.50    # optional: dataset download (only used by data.py)
