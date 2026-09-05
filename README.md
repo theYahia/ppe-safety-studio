@@ -107,3 +107,7 @@ strongest portfolio/visual of 21 industrial themes). Build spec and market conte
 
 Code: MIT. Dataset: CC0 (Hard Hat Workers). Model weights: derived from CC0 data + Ultralytics
 (AGPL-3.0 — note Ultralytics licensing if you redistribute weights commercially).
+
+---
+
+Telegram: [@vhodvai](https://t.me/vhodvai)
